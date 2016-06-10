@@ -162,10 +162,10 @@ describe('Binding: With', function() {
         var finalContainer = testNode.childNodes[0].childNodes[0].childNodes[0];
         expect(finalContainer.childNodes[0]).toContainText("bottom");
         expect(finalContainer.childNodes[1]).toContainText("middle");
-        expect(finalContainer.childNodes[1]).toContainText("middle");
-        expect(finalContainer.childNodes[2]).toContainText("top");
-        expect(finalContainer.childNodes[3]).toContainText("outer");
+        expect(finalContainer.childNodes[2]).toContainText("middle");
+        expect(finalContainer.childNodes[3]).toContainText("top");
         expect(finalContainer.childNodes[4]).toContainText("outer");
+        expect(finalContainer.childNodes[5]).toContainText("outer");
     });
 
     it('Should be able to define an \"with\" region using a containerless template', function() {
