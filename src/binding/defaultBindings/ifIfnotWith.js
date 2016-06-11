@@ -21,7 +21,7 @@ function makeWithIfBinding(bindingKey, isWith, isNot, makeContextCallback) {
                         if (!isFirstRender) {
                             ko.virtualElements.setDomNodeChildren(element, ko.utils.cloneNodes(savedNodes));
                         }
-                        ko.applyBindingsToDescendants(makeContextCallback ? makeContextCallback(bindingContext, rawValue, allBindings().as) : bindingContext, element);
+                        ko.applyBindingsToDescendants(makeContextCallback ? makeContextCallback(bindingContext, rawValue, allBindings()['as']) : bindingContext, element);
                     } else {
                         ko.virtualElements.emptyNode(element);
                     }
